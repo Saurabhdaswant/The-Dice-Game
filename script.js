@@ -11,3 +11,10 @@ const diceEl = document.querySelector(".dice");
 const btnNew = document.querySelector(".btn--new");
 const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold  ");
+
+//starting conditions
+diceEl.classList.add("hidden");
+score1El.textContent = 0;
+score0El.textContent = 0;
+let currentScore = 0;
+let activePlayer = 0;
