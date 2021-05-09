@@ -26,4 +26,7 @@ btnRoll.addEventListener("click", function () {
 
   //2. Display dice
   diceEl.classList.remove("hidden");
+
+  //logic for displaying the random dice number
+  diceEl.src = `img/dice-${dice}.png`;
 });
