@@ -23,4 +23,7 @@ let activePlayer = 0;
 btnRoll.addEventListener("click", function () {
   //1. Generating a random dice roll
   const dice = Math.trunc(Math.random() * 6) + 1;
+
+  //2. Display dice
+  diceEl.classList.remove("hidden");
 });
