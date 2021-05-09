@@ -26,7 +26,21 @@ btnRoll.addEventListener("click", function () {
 
   //2. Display dice
   diceEl.classList.remove("hidden");
-
   //logic for displaying the random dice number
   diceEl.src = `img/dice-${dice}.png`;
+
+  //3. check for rolled 1: if true, switch to next player
+
+  if (dice !== 1) {
+    currentScore += dice;
+
+    document.getElementById(
+      `current--${activePlayer}`
+    ).textContent = currentScore;
+  } else {
+    //switch to next player
+    document.getElementById(`current--${activePlayer}`).textContent = 0;
+    currentScore = 0;
+    activePlayer = activePlayer === 0 ? 1 : 0;
+  }
 });
