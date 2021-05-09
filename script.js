@@ -18,3 +18,9 @@ score1El.textContent = 0;
 score0El.textContent = 0;
 let currentScore = 0;
 let activePlayer = 0;
+
+//Rolling dice funtionality
+btnRoll.addEventListener("click", function () {
+  //1. Generating a random dice roll
+  const dice = Math.trunc(Math.random() * 6) + 1;
+});
