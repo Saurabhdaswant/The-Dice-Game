@@ -16,8 +16,10 @@ const btnHold = document.querySelector(".btn--hold  ");
 diceEl.classList.add("hidden");
 score1El.textContent = 0;
 score0El.textContent = 0;
+let scores = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
+let playing = true;
 
 //Rolling dice funtionality
 btnRoll.addEventListener("click", function () {
