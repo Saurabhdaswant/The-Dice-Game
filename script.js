@@ -56,3 +56,13 @@ btnRoll.addEventListener("click", function () {
     }
   }
 });
+
+btnHold.addEventListener("click", function () {
+  if (playing) {
+    // 1. add current score to active players score
+    scores[activePlayer] += currentScore;
+    // is equal to scores[1] = scores[1] + currentScore;
+    document.getElementById(`score--${activePlayer}`).textContent =
+      scores[activePlayer];
+  }
+});
