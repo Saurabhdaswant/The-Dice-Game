@@ -169,3 +169,79 @@ main {
   font-weight: 700;
   color: #b92736;
 }
+
+@media (max-width: 800px) {
+  /* LAYOUT */
+  main {
+    width: 50rem;
+  }
+
+  .player {
+    flex: 10%;
+    padding: 5rem 2rem;
+  }
+
+  /* ELEMENTS */
+  .name {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .score {
+    font-size: 3rem;
+  }
+
+  .current {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 5rem;
+    width: 0;
+  }
+
+  .current-label {
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+    color: #ddd;
+  }
+
+  .current-score {
+    font-size: 2rem;
+  }
+
+  /* ABSOLUTE POSITIONED ELEMENTS */
+  .btn {
+    position: absolute;
+    left: 50%;
+    font-size: 2rem;
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1rem;
+  }
+
+  .btn::first-letter {
+    font-size: 2rem;
+  }
+
+  .btn--new {
+    top: 0;
+  }
+  .btn--roll {
+    top: 35rem;
+  }
+  .btn--hold {
+    top: 40rem;
+  }
+
+  .dice {
+    left: 50%;
+  }
+
+  .player--winner .name {
+    font-weight: 600;
+    color: #b92736;
+  }
+}
